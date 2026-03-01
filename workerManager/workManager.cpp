@@ -25,6 +25,14 @@ void WorkerManager::ShowMenu()
     {
         std::cout << "*";
     }
+    std::cout << std::endl;
+}
+
+void WorkerManager::ExitSystem()
+{
+    std::cout << "欢迎下次使用" << std::endl;
+    system("pause");
+    exit(0);
 }
 
 WorkerManager::~WorkerManager()

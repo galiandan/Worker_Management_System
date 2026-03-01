@@ -8,5 +8,7 @@ public:
 
     void ShowMenu();
 
+    void ExitSystem();
+
     ~WorkerManager();
 };
