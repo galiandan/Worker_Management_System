@@ -1,10 +1,12 @@
 #include "workerManager.h"
 #include <iostream>
 
+// 空构造
 WorkerManager::WorkerManager()
 {
 }
 
+// 展示菜单
 void WorkerManager::ShowMenu()
 {
     for (int i = 0; i < 44; i++)
@@ -28,6 +30,7 @@ void WorkerManager::ShowMenu()
     std::cout << std::endl;
 }
 
+// 推退出功能
 void WorkerManager::ExitSystem()
 {
     std::cout << "欢迎下次使用" << std::endl;
@@ -35,6 +38,7 @@ void WorkerManager::ExitSystem()
     exit(0);
 }
 
+// 空析构
 WorkerManager::~WorkerManager()
 {
 }
