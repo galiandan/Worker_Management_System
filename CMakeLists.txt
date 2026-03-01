@@ -20,7 +20,9 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib)
 
 # 4. 模块化管理
 add_subdirectory(workerManager)
+add_subdirectory(member)
 
 # 5. 构建目标 (Target-based 关联)
 add_executable(${PROJECT_NAME} main.cpp)
 target_link_libraries(${PROJECT_NAME} PRIVATE workerManager_lib)
+target_link_libraries(${PROJECT_NAME} PRIVATE member_lib)

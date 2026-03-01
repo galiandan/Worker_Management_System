@@ -96,6 +96,7 @@ WorkerManager_EXTERNAL_OBJECTS =
 bin/WorkerManager.exe: CMakeFiles/WorkerManager.dir/main.cpp.obj
 bin/WorkerManager.exe: CMakeFiles/WorkerManager.dir/build.make
 bin/WorkerManager.exe: lib/libworkerManager_lib.a
+bin/WorkerManager.exe: lib/libmember_lib.a
 bin/WorkerManager.exe: CMakeFiles/WorkerManager.dir/linkLibs.rsp
 bin/WorkerManager.exe: CMakeFiles/WorkerManager.dir/objects1.rsp
 bin/WorkerManager.exe: CMakeFiles/WorkerManager.dir/link.txt

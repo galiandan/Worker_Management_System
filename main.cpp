@@ -1,8 +1,14 @@
 #include <iostream>
 #include "workerManager.h"
+#include "worker.h"
+#include "employee.h"
 
 int main()
 {
+    // Worker *worker = NULL;
+    // worker = new Employee(1, "张三", 1);
+    // worker->showInfo();
+
     WorkerManager wm;
     int choice = 0;
     while (true)

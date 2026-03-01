@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles E:\code\c_c++\c_with_class_demo\Cmake\\CMakeFiles\progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(CMAKE_COMMAND) -E cmake_progress_start E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles E:\code\c_c++\c_with_class_demo\Cmake\member\\CMakeFiles\progress.marks
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 member/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 clean
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 member/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,81 +102,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 member/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 member/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named WorkerManager
+# Convenience name for target.
+member/CMakeFiles/member_lib.dir/rule:
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 member/CMakeFiles/member_lib.dir/rule
+.PHONY : member/CMakeFiles/member_lib.dir/rule
 
-# Build rule for target.
-WorkerManager: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 WorkerManager
-.PHONY : WorkerManager
-
-# fast build rule for target.
-WorkerManager/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\WorkerManager.dir\build.make CMakeFiles/WorkerManager.dir/build
-.PHONY : WorkerManager/fast
-
-#=============================================================================
-# Target rules for targets named workerManager_lib
-
-# Build rule for target.
-workerManager_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 workerManager_lib
-.PHONY : workerManager_lib
-
-# fast build rule for target.
-workerManager_lib/fast:
-	$(MAKE) $(MAKESILENT) -f workerManager\CMakeFiles\workerManager_lib.dir\build.make workerManager/CMakeFiles/workerManager_lib.dir/build
-.PHONY : workerManager_lib/fast
-
-#=============================================================================
-# Target rules for targets named member_lib
-
-# Build rule for target.
-member_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 member_lib
+# Convenience name for target.
+member_lib: member/CMakeFiles/member_lib.dir/rule
 .PHONY : member_lib
 
 # fast build rule for target.
 member_lib/fast:
-	$(MAKE) $(MAKESILENT) -f member\CMakeFiles\member_lib.dir\build.make member/CMakeFiles/member_lib.dir/build
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f member\CMakeFiles\member_lib.dir\build.make member/CMakeFiles/member_lib.dir/build
 .PHONY : member_lib/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+employee.obj: employee.cpp.obj
+.PHONY : employee.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\WorkerManager.dir\build.make CMakeFiles/WorkerManager.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+employee.cpp.obj:
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f member\CMakeFiles\member_lib.dir\build.make member/CMakeFiles/member_lib.dir/employee.cpp.obj
+.PHONY : employee.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+employee.i: employee.cpp.i
+.PHONY : employee.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\WorkerManager.dir\build.make CMakeFiles/WorkerManager.dir/main.cpp.i
-.PHONY : main.cpp.i
+employee.cpp.i:
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f member\CMakeFiles\member_lib.dir\build.make member/CMakeFiles/member_lib.dir/employee.cpp.i
+.PHONY : employee.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+employee.s: employee.cpp.s
+.PHONY : employee.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\WorkerManager.dir\build.make CMakeFiles/WorkerManager.dir/main.cpp.s
-.PHONY : main.cpp.s
+employee.cpp.s:
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f member\CMakeFiles\member_lib.dir\build.make member/CMakeFiles/member_lib.dir/employee.cpp.s
+.PHONY : employee.cpp.s
 
 # Help Target
 help:
@@ -186,12 +161,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... WorkerManager
 	@echo ... member_lib
-	@echo ... workerManager_lib
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... employee.obj
+	@echo ... employee.i
+	@echo ... employee.s
 .PHONY : help
 
 
@@ -203,6 +176,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

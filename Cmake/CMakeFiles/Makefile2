@@ -64,21 +64,44 @@ CMAKE_BINARY_DIR = E:\code\c_c++\c_with_class_demo\Cmake
 # The main recursive "all" target.
 all: CMakeFiles/WorkerManager.dir/all
 all: workerManager/all
+all: member/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/WorkerManager.dir/codegen
 codegen: workerManager/codegen
+codegen: member/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
 preinstall: workerManager/preinstall
+preinstall: member/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/WorkerManager.dir/clean
 clean: workerManager/clean
+clean: member/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory member
+
+# Recursive "all" directory target.
+member/all: member/CMakeFiles/member_lib.dir/all
+.PHONY : member/all
+
+# Recursive "codegen" directory target.
+member/codegen: member/CMakeFiles/member_lib.dir/codegen
+.PHONY : member/codegen
+
+# Recursive "preinstall" directory target.
+member/preinstall:
+.PHONY : member/preinstall
+
+# Recursive "clean" directory target.
+member/clean: member/CMakeFiles/member_lib.dir/clean
+.PHONY : member/clean
 
 #=============================================================================
 # Directory level rules for directory workerManager
@@ -104,6 +127,7 @@ workerManager/clean: workerManager/CMakeFiles/workerManager_lib.dir/clean
 
 # All Build rule for target.
 CMakeFiles/WorkerManager.dir/all: workerManager/CMakeFiles/workerManager_lib.dir/all
+CMakeFiles/WorkerManager.dir/all: member/CMakeFiles/member_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WorkerManager.dir\build.make CMakeFiles/WorkerManager.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WorkerManager.dir\build.make CMakeFiles/WorkerManager.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles --progress-num=1,2 "Built target WorkerManager"
@@ -111,7 +135,7 @@ CMakeFiles/WorkerManager.dir/all: workerManager/CMakeFiles/workerManager_lib.dir
 
 # Build rule for subdir invocation for target.
 CMakeFiles/WorkerManager.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/WorkerManager.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles 0
 .PHONY : CMakeFiles/WorkerManager.dir/rule
@@ -138,7 +162,7 @@ CMakeFiles/WorkerManager.dir/clean:
 workerManager/CMakeFiles/workerManager_lib.dir/all:
 	$(MAKE) $(MAKESILENT) -f workerManager\CMakeFiles\workerManager_lib.dir\build.make workerManager/CMakeFiles/workerManager_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f workerManager\CMakeFiles\workerManager_lib.dir\build.make workerManager/CMakeFiles/workerManager_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles --progress-num=3,4 "Built target workerManager_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles --progress-num=5,6 "Built target workerManager_lib"
 .PHONY : workerManager/CMakeFiles/workerManager_lib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -155,13 +179,45 @@ workerManager_lib: workerManager/CMakeFiles/workerManager_lib.dir/rule
 # codegen rule for target.
 workerManager/CMakeFiles/workerManager_lib.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f workerManager\CMakeFiles\workerManager_lib.dir\build.make workerManager/CMakeFiles/workerManager_lib.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles --progress-num=3,4 "Finished codegen for target workerManager_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles --progress-num=5,6 "Finished codegen for target workerManager_lib"
 .PHONY : workerManager/CMakeFiles/workerManager_lib.dir/codegen
 
 # clean rule for target.
 workerManager/CMakeFiles/workerManager_lib.dir/clean:
 	$(MAKE) $(MAKESILENT) -f workerManager\CMakeFiles\workerManager_lib.dir\build.make workerManager/CMakeFiles/workerManager_lib.dir/clean
 .PHONY : workerManager/CMakeFiles/workerManager_lib.dir/clean
+
+#=============================================================================
+# Target rules for target member/CMakeFiles/member_lib.dir
+
+# All Build rule for target.
+member/CMakeFiles/member_lib.dir/all:
+	$(MAKE) $(MAKESILENT) -f member\CMakeFiles\member_lib.dir\build.make member/CMakeFiles/member_lib.dir/depend
+	$(MAKE) $(MAKESILENT) -f member\CMakeFiles\member_lib.dir\build.make member/CMakeFiles/member_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles --progress-num=3,4 "Built target member_lib"
+.PHONY : member/CMakeFiles/member_lib.dir/all
+
+# Build rule for subdir invocation for target.
+member/CMakeFiles/member_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 member/CMakeFiles/member_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles 0
+.PHONY : member/CMakeFiles/member_lib.dir/rule
+
+# Convenience name for target.
+member_lib: member/CMakeFiles/member_lib.dir/rule
+.PHONY : member_lib
+
+# codegen rule for target.
+member/CMakeFiles/member_lib.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f member\CMakeFiles\member_lib.dir\build.make member/CMakeFiles/member_lib.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles --progress-num=3,4 "Finished codegen for target member_lib"
+.PHONY : member/CMakeFiles/member_lib.dir/codegen
+
+# clean rule for target.
+member/CMakeFiles/member_lib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f member\CMakeFiles\member_lib.dir\build.make member/CMakeFiles/member_lib.dir/clean
+.PHONY : member/CMakeFiles/member_lib.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

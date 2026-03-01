@@ -143,6 +143,9 @@
 		},
 		{
 			"path" : "workerManager/CMakeLists.txt"
+		},
+		{
+			"path" : "member/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

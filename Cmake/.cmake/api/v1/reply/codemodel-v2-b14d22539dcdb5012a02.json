@@ -9,7 +9,8 @@
 					"build" : ".",
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"jsonFile" : "directory-.-Debug-f6f22219c74102c3da70.json",
 					"minimumCMakeVersion" : 
@@ -35,6 +36,21 @@
 					"source" : "workerManager",
 					"targetIndexes" : 
 					[
+						2
+					]
+				},
+				{
+					"build" : "member",
+					"jsonFile" : "directory-member-Debug-2dba94cb6d14299ad9df.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "member",
+					"targetIndexes" : 
+					[
 						1
 					]
 				}
@@ -46,13 +62,15 @@
 					"directoryIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					],
 					"name" : "WorkerManager",
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -61,8 +79,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "WorkerManager::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-WorkerManager-Debug-d23215a1045b836af612.json",
+					"jsonFile" : "target-WorkerManager-Debug-867379d8d87bf81c9da5.json",
 					"name" : "WorkerManager",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "member_lib::@abc12264abeebdb1105c",
+					"jsonFile" : "target-member_lib-Debug-61388e9ebe69a84f1137.json",
+					"name" : "member_lib",
 					"projectIndex" : 0
 				},
 				{

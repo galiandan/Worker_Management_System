@@ -2,7 +2,8 @@
 	"InstallScripts" : 
 	[
 		"E:/code/c_c++/c_with_class_demo/Cmake/cmake_install.cmake",
-		"E:/code/c_c++/c_with_class_demo/Cmake/workerManager/cmake_install.cmake"
+		"E:/code/c_c++/c_with_class_demo/Cmake/workerManager/cmake_install.cmake",
+		"E:/code/c_c++/c_with_class_demo/Cmake/member/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

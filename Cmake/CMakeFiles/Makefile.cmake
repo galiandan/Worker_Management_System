@@ -36,6 +36,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.2.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.2.3/CMakeRCCompiler.cmake"
   "CMakeFiles/4.2.3/CMakeSystem.cmake"
+  "E:/code/c_c++/c_with_class_demo/member/CMakeLists.txt"
   "E:/code/c_c++/c_with_class_demo/workerManager/CMakeLists.txt"
   )
 
@@ -49,10 +50,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "workerManager/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "member/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/WorkerManager.dir/DependInfo.cmake"
   "workerManager/CMakeFiles/workerManager_lib.dir/DependInfo.cmake"
+  "member/CMakeFiles/member_lib.dir/DependInfo.cmake"
   )
