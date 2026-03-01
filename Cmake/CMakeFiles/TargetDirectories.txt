@@ -1,0 +1,6 @@
+E:/code/c_c++/c_with_class_demo/Cmake/CMakeFiles/WorkerManager.dir
+E:/code/c_c++/c_with_class_demo/Cmake/CMakeFiles/edit_cache.dir
+E:/code/c_c++/c_with_class_demo/Cmake/CMakeFiles/rebuild_cache.dir
+E:/code/c_c++/c_with_class_demo/Cmake/workerManager/CMakeFiles/workerManager_lib.dir
+E:/code/c_c++/c_with_class_demo/Cmake/workerManager/CMakeFiles/edit_cache.dir
+E:/code/c_c++/c_with_class_demo/Cmake/workerManager/CMakeFiles/rebuild_cache.dir
