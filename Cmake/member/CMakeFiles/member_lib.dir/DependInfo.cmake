@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "E:/code/c_c++/c_with_class_demo/member/boss.cpp" "member/CMakeFiles/member_lib.dir/boss.cpp.obj" "gcc" "member/CMakeFiles/member_lib.dir/boss.cpp.obj.d"
   "E:/code/c_c++/c_with_class_demo/member/employee.cpp" "member/CMakeFiles/member_lib.dir/employee.cpp.obj" "gcc" "member/CMakeFiles/member_lib.dir/employee.cpp.obj.d"
+  "E:/code/c_c++/c_with_class_demo/member/manager.cpp" "member/CMakeFiles/member_lib.dir/manager.cpp.obj" "gcc" "member/CMakeFiles/member_lib.dir/manager.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

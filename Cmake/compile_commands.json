@@ -16,5 +16,17 @@
   "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/member_lib.dir/includes_CXX.rsp -g -std=gnu++11 -Wall -Wextra -Werror -g -o CMakeFiles\\member_lib.dir\\employee.cpp.obj -c E:\\code\\c_c++\\c_with_class_demo\\member\\employee.cpp",
   "file": "E:/code/c_c++/c_with_class_demo/member/employee.cpp",
   "output": "member/CMakeFiles/member_lib.dir/employee.cpp.obj"
+},
+{
+  "directory": "E:/code/c_c++/c_with_class_demo/Cmake/member",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/member_lib.dir/includes_CXX.rsp -g -std=gnu++11 -Wall -Wextra -Werror -g -o CMakeFiles\\member_lib.dir\\manager.cpp.obj -c E:\\code\\c_c++\\c_with_class_demo\\member\\manager.cpp",
+  "file": "E:/code/c_c++/c_with_class_demo/member/manager.cpp",
+  "output": "member/CMakeFiles/member_lib.dir/manager.cpp.obj"
+},
+{
+  "directory": "E:/code/c_c++/c_with_class_demo/Cmake/member",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/member_lib.dir/includes_CXX.rsp -g -std=gnu++11 -Wall -Wextra -Werror -g -o CMakeFiles\\member_lib.dir\\boss.cpp.obj -c E:\\code\\c_c++\\c_with_class_demo\\member\\boss.cpp",
+  "file": "E:/code/c_c++/c_with_class_demo/member/boss.cpp",
+  "output": "member/CMakeFiles/member_lib.dir/boss.cpp.obj"
 }
 ]

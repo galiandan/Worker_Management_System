@@ -11,6 +11,11 @@ public:
     // 获取岗位名称
     virtual std::string getDpetName() = 0;
 
+    // 虚析构
+    virtual ~Worker()
+    {
+    }
+
 protected:
     int m_Id;           // 个人ID
     std::string m_Name; // 个人名字

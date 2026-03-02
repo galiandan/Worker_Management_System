@@ -128,7 +128,9 @@ CMakeFiles/WorkerManager.dir/main.cpp.obj: E:/code/c_c++/c_with_class_demo/main.
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/mingw64/x86_64-w64-mingw32/include/wchar.h \
   C:/mingw64/x86_64-w64-mingw32/include/wctype.h \
+  E:/code/c_c++/c_with_class_demo/member/boss.h \
   E:/code/c_c++/c_with_class_demo/member/employee.h \
+  E:/code/c_c++/c_with_class_demo/member/manager.h \
   E:/code/c_c++/c_with_class_demo/member/worker.h \
   E:/code/c_c++/c_with_class_demo/workerManager/workerManager.h
 
@@ -171,6 +173,8 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:
 
+E:/code/c_c++/c_with_class_demo/member/boss.h:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio:
@@ -198,6 +202,8 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h:
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:
+
+E:/code/c_c++/c_with_class_demo/member/manager.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc:
 

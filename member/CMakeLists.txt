@@ -2,6 +2,10 @@
 add_library(member_lib STATIC 
     employee.cpp
     employee.h
+    manager.h
+    manager.cpp
+    boss.h
+    boss.cpp
     worker.h
 )
 

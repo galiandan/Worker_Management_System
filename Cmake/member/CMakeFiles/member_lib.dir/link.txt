@@ -1,2 +1,2 @@
-C:\mingw64\bin\ar.exe qc ..\lib\libmember_lib.a CMakeFiles/member_lib.dir/employee.cpp.obj
+C:\mingw64\bin\ar.exe qc ..\lib\libmember_lib.a CMakeFiles/member_lib.dir/employee.cpp.obj CMakeFiles/member_lib.dir/manager.cpp.obj CMakeFiles/member_lib.dir/boss.cpp.obj
 C:\mingw64\bin\ranlib.exe ..\lib\libmember_lib.a

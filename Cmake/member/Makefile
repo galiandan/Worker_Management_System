@@ -129,6 +129,30 @@ member_lib/fast:
 	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f member\CMakeFiles\member_lib.dir\build.make member/CMakeFiles/member_lib.dir/build
 .PHONY : member_lib/fast
 
+boss.obj: boss.cpp.obj
+.PHONY : boss.obj
+
+# target to build an object file
+boss.cpp.obj:
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f member\CMakeFiles\member_lib.dir\build.make member/CMakeFiles/member_lib.dir/boss.cpp.obj
+.PHONY : boss.cpp.obj
+
+boss.i: boss.cpp.i
+.PHONY : boss.i
+
+# target to preprocess a source file
+boss.cpp.i:
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f member\CMakeFiles\member_lib.dir\build.make member/CMakeFiles/member_lib.dir/boss.cpp.i
+.PHONY : boss.cpp.i
+
+boss.s: boss.cpp.s
+.PHONY : boss.s
+
+# target to generate assembly for a file
+boss.cpp.s:
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f member\CMakeFiles\member_lib.dir\build.make member/CMakeFiles/member_lib.dir/boss.cpp.s
+.PHONY : boss.cpp.s
+
 employee.obj: employee.cpp.obj
 .PHONY : employee.obj
 
@@ -153,6 +177,30 @@ employee.cpp.s:
 	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f member\CMakeFiles\member_lib.dir\build.make member/CMakeFiles/member_lib.dir/employee.cpp.s
 .PHONY : employee.cpp.s
 
+manager.obj: manager.cpp.obj
+.PHONY : manager.obj
+
+# target to build an object file
+manager.cpp.obj:
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f member\CMakeFiles\member_lib.dir\build.make member/CMakeFiles/member_lib.dir/manager.cpp.obj
+.PHONY : manager.cpp.obj
+
+manager.i: manager.cpp.i
+.PHONY : manager.i
+
+# target to preprocess a source file
+manager.cpp.i:
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f member\CMakeFiles\member_lib.dir\build.make member/CMakeFiles/member_lib.dir/manager.cpp.i
+.PHONY : manager.cpp.i
+
+manager.s: manager.cpp.s
+.PHONY : manager.s
+
+# target to generate assembly for a file
+manager.cpp.s:
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f member\CMakeFiles\member_lib.dir\build.make member/CMakeFiles/member_lib.dir/manager.cpp.s
+.PHONY : manager.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -162,9 +210,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... member_lib
+	@echo ... boss.obj
+	@echo ... boss.i
+	@echo ... boss.s
 	@echo ... employee.obj
 	@echo ... employee.i
 	@echo ... employee.s
+	@echo ... manager.obj
+	@echo ... manager.i
+	@echo ... manager.s
 .PHONY : help
 
 

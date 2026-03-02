@@ -86,17 +86,51 @@ member/CMakeFiles/member_lib.dir/employee.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/member_lib.dir/employee.cpp.s"
 	cd /d E:\code\c_c++\c_with_class_demo\Cmake\member && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\code\c_c++\c_with_class_demo\member\employee.cpp -o CMakeFiles\member_lib.dir\employee.cpp.s
 
+member/CMakeFiles/member_lib.dir/manager.cpp.obj: member/CMakeFiles/member_lib.dir/flags.make
+member/CMakeFiles/member_lib.dir/manager.cpp.obj: member/CMakeFiles/member_lib.dir/includes_CXX.rsp
+member/CMakeFiles/member_lib.dir/manager.cpp.obj: E:/code/c_c++/c_with_class_demo/member/manager.cpp
+member/CMakeFiles/member_lib.dir/manager.cpp.obj: member/CMakeFiles/member_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object member/CMakeFiles/member_lib.dir/manager.cpp.obj"
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake\member && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT member/CMakeFiles/member_lib.dir/manager.cpp.obj -MF CMakeFiles\member_lib.dir\manager.cpp.obj.d -o CMakeFiles\member_lib.dir\manager.cpp.obj -c E:\code\c_c++\c_with_class_demo\member\manager.cpp
+
+member/CMakeFiles/member_lib.dir/manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/member_lib.dir/manager.cpp.i"
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake\member && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\code\c_c++\c_with_class_demo\member\manager.cpp > CMakeFiles\member_lib.dir\manager.cpp.i
+
+member/CMakeFiles/member_lib.dir/manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/member_lib.dir/manager.cpp.s"
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake\member && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\code\c_c++\c_with_class_demo\member\manager.cpp -o CMakeFiles\member_lib.dir\manager.cpp.s
+
+member/CMakeFiles/member_lib.dir/boss.cpp.obj: member/CMakeFiles/member_lib.dir/flags.make
+member/CMakeFiles/member_lib.dir/boss.cpp.obj: member/CMakeFiles/member_lib.dir/includes_CXX.rsp
+member/CMakeFiles/member_lib.dir/boss.cpp.obj: E:/code/c_c++/c_with_class_demo/member/boss.cpp
+member/CMakeFiles/member_lib.dir/boss.cpp.obj: member/CMakeFiles/member_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object member/CMakeFiles/member_lib.dir/boss.cpp.obj"
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake\member && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT member/CMakeFiles/member_lib.dir/boss.cpp.obj -MF CMakeFiles\member_lib.dir\boss.cpp.obj.d -o CMakeFiles\member_lib.dir\boss.cpp.obj -c E:\code\c_c++\c_with_class_demo\member\boss.cpp
+
+member/CMakeFiles/member_lib.dir/boss.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/member_lib.dir/boss.cpp.i"
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake\member && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\code\c_c++\c_with_class_demo\member\boss.cpp > CMakeFiles\member_lib.dir\boss.cpp.i
+
+member/CMakeFiles/member_lib.dir/boss.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/member_lib.dir/boss.cpp.s"
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake\member && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\code\c_c++\c_with_class_demo\member\boss.cpp -o CMakeFiles\member_lib.dir\boss.cpp.s
+
 # Object files for target member_lib
 member_lib_OBJECTS = \
-"CMakeFiles/member_lib.dir/employee.cpp.obj"
+"CMakeFiles/member_lib.dir/employee.cpp.obj" \
+"CMakeFiles/member_lib.dir/manager.cpp.obj" \
+"CMakeFiles/member_lib.dir/boss.cpp.obj"
 
 # External object files for target member_lib
 member_lib_EXTERNAL_OBJECTS =
 
 lib/libmember_lib.a: member/CMakeFiles/member_lib.dir/employee.cpp.obj
+lib/libmember_lib.a: member/CMakeFiles/member_lib.dir/manager.cpp.obj
+lib/libmember_lib.a: member/CMakeFiles/member_lib.dir/boss.cpp.obj
 lib/libmember_lib.a: member/CMakeFiles/member_lib.dir/build.make
 lib/libmember_lib.a: member/CMakeFiles/member_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ..\lib\libmember_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ..\lib\libmember_lib.a"
 	cd /d E:\code\c_c++\c_with_class_demo\Cmake\member && $(CMAKE_COMMAND) -P CMakeFiles\member_lib.dir\cmake_clean_target.cmake
 	cd /d E:\code\c_c++\c_with_class_demo\Cmake\member && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\member_lib.dir\link.txt --verbose=$(VERBOSE)
 
