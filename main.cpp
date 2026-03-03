@@ -25,6 +25,7 @@ int main()
             wm.Add_Emp();
             break;
         case 2: // 显示职工信息
+            wm.show_Emp();
             break;
         case 3: // 删除离职员工
             break;

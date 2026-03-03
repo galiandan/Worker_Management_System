@@ -42,69 +42,95 @@ void WorkerManager::ExitSystem()
 // 添加职工
 void WorkerManager::Add_Emp()
 {
-    std::cout << "请输入添加的职工的数量" << std::endl;
-    int addNum = 0;
-    std::cin >> addNum;
-    if (addNum > 0)
+    while (1)
     {
-        int newSize = this->m_EmpNum + addNum;
-
-        Worker **newspace = new Worker *[newSize];
-
-        if (this->m_EmpArray != NULL)
+        std::cout << "请输入添加的职工的数量" << std::endl;
+        int addNum = 0;
+        std::cin >> addNum;
+        if (addNum > 0)
         {
-            for (int i = 0; i < this->m_EmpNum; i++)
+            int newSize = this->m_EmpNum + addNum;
+
+            Worker **newspace = new Worker *[newSize];
+
+            if (this->m_EmpArray != NULL)
             {
-                newspace[i] = this->m_EmpArray[i];
+                for (int i = 0; i < this->m_EmpNum; i++)
+                {
+                    newspace[i] = this->m_EmpArray[i];
+                }
             }
+            for (int i = 0; i < addNum; i++)
+            {
+                int id;
+                std::string name;
+                int dSelect;
+                std::cout << "请输入第" << i + 1 << "个新员工编号：" << std::endl;
+                std::cin >> id;
+
+                std::cout << "请输入第" << i + 1 << "个新员姓名：" << std::endl;
+                std::cin >> name;
+
+                std::cout << "请选择该职工岗位" << std::endl;
+                std::cout << "1、普通职工" << std::endl;
+                std::cout << "2、经理" << std::endl;
+                std::cout << "3、老板" << std::endl;
+                std::cin >> dSelect;
+
+                Worker *worker = NULL;
+                switch (dSelect)
+                {
+                case 1:
+                    worker = new Employee(id, name, dSelect);
+                    break;
+                case 2:
+                    worker = new Manager(id, name, dSelect);
+                    break;
+                case 3:
+                    worker = new Boss(id, name, dSelect);
+                    break;
+                default:
+                    break;
+                }
+
+                newspace[this->m_EmpNum + i] = worker;
+            }
+
+            // 释放原来数组指针
+            delete[] this->m_EmpArray;
+
+            // 更新新数组指针
+            this->m_EmpArray = newspace;
+
+            // 更新职工人数
+            this->m_EmpNum = newSize;
+
+            std::cout << "成功添加" << addNum << "名新员工" << std::endl;
+            break;
         }
-        for (int i = 0; i < addNum; i++)
+        else
         {
-            int id;
-            std::string name;
-            int dSelect;
-            std::cout << "请输入第" << i + 1 << "个新员工编号：" << std::endl;
-            std::cin >> id;
-
-            std::cout << "请输入第" << i + 1 << "个新员姓名：" << std::endl;
-            std::cin >> name;
-
-            std::cout << "请选择该职工岗位" << std::endl;
-            std::cout << "1、普通职工" << std::endl;
-            std::cout << "2、经理" << std::endl;
-            std::cout << "3、老板" << std::endl;
-            std::cin >> dSelect;
-
-            Worker *worker = NULL;
-            switch (dSelect)
-            {
-            case 1:
-                worker = new Employee(id, name, dSelect);
-                break;
-            case 2:
-                worker = new Manager(id, name, dSelect);
-                break;
-            case 3:
-                worker = new Boss(id, name, dSelect);
-                break;
-            default:
-                break;
-            }
-
-            newspace[this->m_EmpNum + i] = worker;
+            std::cout << "输入有误" << std::endl;
         }
+    }
+    system("pause");
+    system("cls");
+}
 
-        delete[] this->m_EmpArray;
-
-        this->m_EmpArray = newspace;
-
-        this->m_EmpNum = newSize;
-
-        std::cout << "成功添加" << addNum << "名新员工" << std::endl;
+// 显示职工信息
+void WorkerManager::show_Emp()
+{
+    if (this->m_EmpNum == 0)
+    {
+        std::cout << "还未添加职工" << std::endl;
     }
     else
     {
-        std::cout << "输入有误" << std::endl;
+        system("cls");
+        for (int i = 0; i < this->m_EmpNum; i++)
+        {
+            this->m_EmpArray[i]->showInfo();
+        }
     }
     system("pause");
     system("cls");

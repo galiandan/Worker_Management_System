@@ -20,6 +20,9 @@ public:
     // 添加职工
     void Add_Emp();
 
+    // 显示职工信息
+    void show_Emp();
+
     // 空析构
     ~WorkerManager();
 
