@@ -65,10 +65,11 @@ void WorkerManager::Add_Emp()
                 int id;
                 std::string name;
                 int dSelect;
-                std::cout << "请输入第" << i + 1 << "个新员工编号：" << std::endl;
+                std::cout << "现在已有" << this->m_EmpNum << "名员工,";
+                std::cout << "请输入第" << this->m_EmpNum + i + 1 << "个新员工编号：" << std::endl;
                 std::cin >> id;
 
-                std::cout << "请输入第" << i + 1 << "个新员姓名：" << std::endl;
+                std::cout << "请输入第" << this->m_EmpNum + i + 1 << "个新员姓名：" << std::endl;
                 std::cin >> name;
 
                 std::cout << "请选择该职工岗位" << std::endl;
@@ -136,6 +137,90 @@ void WorkerManager::show_Emp()
     system("cls");
 }
 
+// 删除离职员工
+void WorkerManager::Del_Emp()
+{
+    int choice = 0;
+    std::cout << "请选择删除方式" << std::endl;
+    std::cout << "1、按照编号删除 2、按照姓名删除" << std::endl;
+    std::cin >> choice;
+    switch (choice)
+    {
+    case 1:
+    {
+        int id;
+        std::cout << "请输入要删除的职工编号：" << std::endl;
+        std::cin >> id;
+        int index = -1;
+        for (int i = 0; i < this->m_EmpNum; i++)
+        {
+            if (this->m_EmpArray[i]->getId() == id)
+            {
+                index = i;
+                break;
+            }
+        }
+        if (index == -1)
+        {
+            std::cout << "未找到该职工编号" << std::endl;
+        }
+        else
+        {
+            std::cout << "找到职工编号为" << id << "的职工" << std::endl;
+            std::cout << "信息为：" << std::endl;
+            this->m_EmpArray[index]->showInfo();
+            std::cout << "确认删除吗？" << std::endl;
+            std::cout << "1、确认删除 2、取消删除" << std::endl;
+            int select = 0;
+            std::cin >> select;
+            if (select == 2)
+            {
+                std::cout << "已取消删除" << std::endl;
+                break;
+            }
+            for (int i = index; i < this->m_EmpNum - 1; i++)
+            {
+                this->m_EmpArray[i] = this->m_EmpArray[i + 1];
+            }
+            this->m_EmpNum--;
+            std::cout << "删除成功！" << std::endl;
+        }
+    }
+    break;
+    case 2:
+    {
+        std::string name;
+        std::cout << "请输入要删除的职工姓名：" << std::endl;
+        std::cin >> name;
+        int index = -1;
+        for (int i = 0; i < this->m_EmpNum; i++)
+        {
+            if (this->m_EmpArray[i]->getName() == name)
+            {
+                index = i;
+                break;
+            }
+        }
+        if (index == -1)
+        {
+            std::cout << "未找到该职工姓名" << std::endl;
+        }
+        else
+        {
+            for (int i = index; i < this->m_EmpNum - 1; i++)
+            {
+                this->m_EmpArray[i] = this->m_EmpArray[i + 1];
+            }
+            this->m_EmpNum--;
+            std::cout << "删除成功！" << std::endl;
+        }
+    }
+    break;
+
+    default:
+        break;
+    }
+}
 // 空析构
 WorkerManager::~WorkerManager()
 {

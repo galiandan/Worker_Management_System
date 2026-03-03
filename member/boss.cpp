@@ -21,3 +21,15 @@ std::string Boss::getDpetName()
 {
     return std::string("经理");
 }
+
+// 获取个人ID
+int Boss::getId()
+{
+    return this->m_Id;
+}
+
+// 获取个人名字
+std::string Boss::getName()
+{
+    return this->m_Name;
+}

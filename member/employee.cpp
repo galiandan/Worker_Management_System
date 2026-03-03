@@ -22,3 +22,15 @@ std::string Employee::getDpetName()
 {
     return std::string("员工");
 }
+
+// 获取个人ID
+int Employee::getId()
+{
+    return this->m_Id;
+}
+
+// 获取个人名字
+std::string Employee::getName()
+{
+    return this->m_Name;
+}

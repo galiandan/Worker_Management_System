@@ -14,4 +14,10 @@ public:
 
     // 获取岗位名称
     virtual std::string getDpetName() override;
+
+    // 获得个人ID
+    virtual int getId() override;
+
+    // 获得个人名字
+    virtual std::string getName() override;
 };

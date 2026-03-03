@@ -23,6 +23,9 @@ public:
     // 显示职工信息
     void show_Emp();
 
+    // 删除离职员工
+    void Del_Emp();
+
     // 空析构
     ~WorkerManager();
 

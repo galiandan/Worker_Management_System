@@ -28,6 +28,7 @@ int main()
             wm.show_Emp();
             break;
         case 3: // 删除离职员工
+            wm.Del_Emp();
             break;
         case 4: // 修改职工信息
             break;
