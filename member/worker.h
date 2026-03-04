@@ -17,6 +17,15 @@ public:
     // 获得个人名字
     virtual std::string getName() = 0;
 
+    // 修改姓名
+    virtual void modName() = 0;
+
+    // 修改部门
+    virtual void modDept() = 0;
+
+    // 修改ID
+    virtual void modId() = 0;
+
     // 虚析构
     virtual ~Worker()
     {

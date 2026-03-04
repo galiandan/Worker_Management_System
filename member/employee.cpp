@@ -34,3 +34,24 @@ std::string Employee::getName()
 {
     return this->m_Name;
 }
+
+// 修改姓名
+void Employee::modName()
+{
+    std::cout << "请输入新的姓名：";
+    std::cin >> this->m_Name;
+}
+
+// 修改部门
+void Employee::modDept()
+{
+    std::cout << "请输入新的部门编号：";
+    std::cin >> this->m_DeptId;
+}
+
+// 修改ID
+void Employee::modId()
+{
+    std::cout << "请输入新的ID：";
+    std::cin >> this->m_Id;
+}

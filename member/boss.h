@@ -20,4 +20,13 @@ public:
 
     // 获得个人名字
     virtual std::string getName() override;
+
+    // 修改姓名
+    virtual void modName() override;
+
+    // 修改部门
+    virtual void modDept() override;
+
+    // 修改ID
+    virtual void modId() override;
 };

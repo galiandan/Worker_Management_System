@@ -26,6 +26,9 @@ public:
     // 删除离职员工
     void Del_Emp();
 
+    // 修改职员信息
+    void Mod_Emp();
+
     // 空析构
     ~WorkerManager();
 

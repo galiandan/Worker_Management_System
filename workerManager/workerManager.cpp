@@ -142,7 +142,7 @@ void WorkerManager::Del_Emp()
 {
     int choice = 0;
     std::cout << "请选择删除方式" << std::endl;
-    std::cout << "1、按照编号删除 2、按照姓名删除" << std::endl;
+    std::cout << "1、按照编号删除 2、按照姓名删除 3、取消删除操作" << std::endl;
     std::cin >> choice;
     switch (choice)
     {
@@ -163,6 +163,8 @@ void WorkerManager::Del_Emp()
         if (index == -1)
         {
             std::cout << "未找到该职工编号" << std::endl;
+            system("pause");
+            system("cls");
         }
         else
         {
@@ -208,6 +210,8 @@ void WorkerManager::Del_Emp()
         if (index == -1)
         {
             std::cout << "未找到该职工姓名" << std::endl;
+            system("pause");
+            system("cls");
         }
         else
         {
@@ -236,11 +240,58 @@ void WorkerManager::Del_Emp()
         }
     }
     break;
-
+    case 3:
+    {
+        std::cout << "已取消删除" << std::endl;
+        system("pause");
+        system("cls");
+    }
     default:
         break;
     }
 }
+
+// 修改职员信息
+void WorkerManager::Mod_Emp()
+{
+    std::cout << "请选择通过1、编号查找修改 2、姓名查找修改" << std::endl;
+    int choice = 0;
+    std::cin >> choice;
+    switch (choice)
+    {
+    case 1:
+    {
+        int id;
+        std::cout << "请输入要修改的职工编号：" << std::endl;
+        std::cin >> id;
+        int index = -1;
+        for (int i = 0; i < this->m_EmpNum; i++)
+        {
+            if (this->m_EmpArray[i]->getId() == id)
+            {
+                index = i;
+                break;
+            }
+        }
+        if (index == -1)
+        {
+            std::cout << "未找到该职工编号" << std::endl;
+        }
+        else
+        {
+            this->m_EmpArray[index]->modName();
+            this->m_EmpArray[index]->modDept();
+            this->m_EmpArray[index]->modId();
+            std::cout << "修改成功！" << std::endl;
+            system("pause");
+        }
+    }
+    break;
+    default:
+        break;
+    }
+}
+
 // 空析构
 WorkerManager::~WorkerManager()
 {
